@@ -8,6 +8,6 @@ public class ValorEspecifico {
         cont++;
     }
     } 
-    System.out.println("Existem " + cont + " notas maior que 70." );
+    System.out.println("   Existem " + cont + " notas maior que 70." );
 }
 }

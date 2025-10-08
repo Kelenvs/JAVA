@@ -1,0 +1,127 @@
+A01 - Autoestudo - Calculadora de Notas para um aluno
+
+Instruções
+Desenvolva um programa em Java que simule um sistema básico de análise de notas de um estudante, utilizando conceitos de entrada de dados e estruturas condicionais.
+Para um aluno, o programa deve solicitar:
+
+Nome completo do estudante
+Primeira nota (valor entre 0 e 10)
+Segunda nota (valor entre 0 e 10)
+Processamento
+O programa deve:
+
+Calcular a média aritmética das duas notas: média = (nota1 + nota2) / 2
+Determinar a situação acadêmica do aluno baseada na média:
+Média ≥ 7.0: APROVADO POR MÉDIA
+Média entre 5.0 e 6.9: APROVADO
+Média < 5.0: REPROVADO
+Identificar qual foi a maior nota obtida pelo aluno
+Saída de Dados
+
+Para cada aluno, exibir:
+Nome do estudante
+As duas notas informadas
+Média calculada
+Situação acadêmica
+Maior nota obtida
+
+Exemplo de Execução
+=== SISTEMA DE NOTAS - VERSÃO 1.0 === 
+Digite o nome do aluno: Maria Silva 
+Digite a primeira nota: 8.5 
+Digite a segunda nota: 7.0 
+
+--- RELATÓRIO DO ALUNO --- 
+Nome: Maria Silva 
+Nota 1: 8.5 
+Nota 2: 7.0 
+Média: 7.75 
+Situação: APROVADO POR MÉDIA
+Maior nota: 8.5
+Requisitos Técnicos
+Utilizar a classe Scanner para leitura de dados
+Implementar estruturas condicionais (if/else) para classificação das notas
+Estrutura Sugerida:
+import java.util.Scanner; 
+
+public class CalculadoraNotas {     
+    public static void main(String[] args) {         
+        Scanner scanner = new Scanner(System.in);                 
+        // Seu código aqui                 
+        scanner.close();
+    } 
+}
+
+_________________________________________________________________________________________________________________________________________________________
+
+       
+A02 - Autoestudo - Calculadora de Notas para vários alunos
+
+Desenvolva um programa em Java que simule um sistema básico de análise de notas de estudantes, utilizando conceitos de entrada de dados, estruturas condicionais e laços de repetição.
+Para cada aluno, o programa deve solicitar:
+
+Nome completo do estudante
+Primeira nota (valor entre 0 e 10)
+Segunda nota (valor entre 0 e 10)
+Processamento
+O programa deve:
+
+Calcular a média aritmética das duas notas: média = (nota1 + nota2) / 2
+Determinar a situação acadêmica do aluno baseada na média:
+Média ≥ 7.0: APROVADO POR MÉDIA
+Média entre 5.0 e 6.9: APROVADO
+Média < 5.0: REPROVADO
+Identificar qual foi a maior nota obtida pelo aluno
+Contar o total de alunos processados
+Saída de Dados
+Para cada aluno, exibir:
+
+Nome do estudante
+As duas notas informadas
+Média calculada
+Situação acadêmica
+Maior nota obtida
+
+Ao final, exibir:
+
+Quantidade total de alunos processados
+O programa deve funcionar em loop contínuo, processando alunos até que o usuário digite "fim" no campo nome do estudante.
+Exemplo de Execução
+=== SISTEMA DE NOTAS - VERSÃO 2.0 === 
+
+Digite o nome do aluno (ou 'fim' para encerrar): Maria Silva 
+Digite a primeira nota: 8.5 
+Digite a segunda nota: 7.0 
+
+--- RELATÓRIO DO ALUNO --- 
+Nome: Maria Silva 
+Nota 1: 8.5 
+Nota 2: 7.0 
+Média: 7.75 
+Situação: APROVADO POR MÉDIA 
+Maior nota: 8.5 
+
+Digite o nome do aluno (ou 'fim' para encerrar): João Santos 
+Digite a primeira nota: 4.0 
+Digite a segunda nota: 6.0 
+
+--- RELATÓRIO DO ALUNO --- 
+Nome: João Santos 
+Nota 1: 4.0 
+Nota 2: 6.0 Média: 5.00 
+Situação: APROVADO 
+Maior nota: 6.0 
+
+Digite o nome do aluno (ou 'fim' para encerrar): fim 
+
+=== RESUMO FINAL === 
+Total de alunos processados: 2 
+
+Programa encerrado. Obrigado por usar o Sistema de Notas!
+Requisitos Técnicos
+Utilizar a classe Scanner para leitura de dados
+Implementar estruturas condicionais (if/else) para classificação das notas
+Utilizar laço de repetição (while ou do-while) para processar múltiplos alunos
+Utilizar laço de repetição (for ou estrutura condicional) para determinar a maior nota
+Estrutura Sugerida:
+Base do programa desenvolvido para a atividade 01.

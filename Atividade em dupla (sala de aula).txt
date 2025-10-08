@@ -1,0 +1,50 @@
+DESAFIO 1: Calculadora de Área de Retângulo
+Sua Missão:
+Criar um programa que calcule a área de um retângulo.
+
+Resposta:
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int altura = scanner.nextInt();
+        int largura = scanner.nextInt();
+        int area = altura*largura;
+        System.out.println("A área do retângulo é: "+area+" metros quadrados.");
+    }
+}
+_____________________________________________
+DESAFIO 2: Conversor de Temperatura
+Sua Missão:
+Converter 25°C para Fahrenheit.
+
+Resposta:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int celsius = scanner.nextInt();
+        int fahreinhiet = (celsius*9)/5+32;
+        System.out.println(celsius+"°C equivale a "+fahreinhiet+"°F.");
+    }
+}
+_____________________________________________
+DESAFIO 3: Calculadora de Idade em Dias
+Sua Missão:
+Calcular quantos dias uma pessoa de 20 anos já viveu.
+
+Resposta:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int idade = scanner.nextInt();
+        int dias = idade*365;
+        int horas = dias*24;
+        int minutos = horas*60;
+        System.out.println(idade+" anos equivalem a "+dias+" dias, "+horas+" horas e "+minutos+" minutos.");
+    }
+}

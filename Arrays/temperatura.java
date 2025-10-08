@@ -9,6 +9,6 @@ public class temperatura {
           maior = temperaturas[i];
           }
        } 
-        System.out.println("A maior temperatura " + maior );
+        System.out.println("    A maior temperatura é " + maior +"°");
     }
 }

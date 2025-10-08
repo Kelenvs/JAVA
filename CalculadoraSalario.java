@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class CalculadoraSalario {
+    public static void main(String[]args){
+        Scanner scanner = new Scanner(System.in);
+
+        double salariobruto = scanner.nextDouble();
+        int temposervico = scanner.nextInt();
+        double desconto;
+        double bonificacao;
+
+        //DESCONTO I
+        if (salariobruto <= 2000) {
+            desconto = (salariobruto*0.92)-salariobruto;
+            System.out.println(desconto);
+
+        } else if ((salariobruto >= 2001) && (salariobruto <= 4000)) {
+            desconto = (salariobruto*0.88);
+            System.out.println(desconto);
+
+        } else {
+            desconto = (salariobruto*0.85);
+            System.out.println(desconto);
+        }
+
+        //BONIFICAÇÃO
+        if ((temposervico >= 3) && (temposervico <= 5)){
+        bonificacao = (salariobruto*0.95) - salariobruto;
+        System.out.println(bonificacao);
+        } else {
+        bonificacao = (salariobruto*0.90);
+        System.out.println(bonificacao);
+        }
+        
+    
+        System.out.println((salariobruto + desconto) - bonificacao);
+        scanner.close();
+    
+    // System.out.printf("Salário Bruto: R$ "+salariobruto+", Desconto Inss: R$ "+desconto+", Bonificação "+bonificacao+" , Salário Líquido: R$ "+((salariobruto-desconto)+bonificacao)+".");
+//    %.2f%n,
+    
+}
+}
