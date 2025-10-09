@@ -1,0 +1,64 @@
+beecrowd | 1010
+Cálculo Simples
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+
+        int cod1 = scanner.nextInt();
+        int num1 = scanner.nextInt();
+        double valor1 = scanner.nextDouble();
+
+        int cod2 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+        double valor2 = scanner.nextDouble();
+
+        double total = (num1 * valor1) + (num2 * valor2);
+
+        System.out.printf("VALOR A PAGAR: R$ %.2f\n", total);
+        scanner.close();
+    }
+}
+_____________________________________________________________________
+beecrowd | 1014
+Consumo
+
+import java.util.Scanner;
+import java.util.Locale;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        int km = scanner.nextInt();
+        double gasolina = scanner.nextDouble();
+        double consumo = km / gasolina;
+
+        System.out.printf("%.3f km/l\n", consumo);
+
+        scanner.close();
+    }
+}
+_____________________________________________________________________
+beecrowd | 1016
+Distância
+
+import java.util.Scanner;
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int km = scanner.nextInt();
+        int minutos = km * 2;
+        
+        System.out.println(minutos+" minutos");
+
+        scanner.close();
+    }
+}

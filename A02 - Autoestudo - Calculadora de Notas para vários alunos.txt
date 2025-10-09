@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class SistemasDeNotasVariosAlunos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int totalAlunos = 0;
+        String nome;
+
+        System.out.println("=== SISTEMA DE NOTAS - VERSÃO 2.0 ===");
+
+        do {
+            System.out.print("\nDigite o nome do aluno (ou 'fim' para encerrar): ");
+            nome = scanner.nextLine();
+
+            if (nome.equalsIgnoreCase("fim")) {
+                break;
+            }
+
+            System.out.print("Digite a primeira nota: ");
+            double nota1 = scanner.nextDouble();
+
+            System.out.print("Digite a segunda nota: ");
+            double nota2 = scanner.nextDouble();
+            scanner.nextLine(); 
+
+            double media = (nota1 + nota2) / 2;
+            String resultado;
+            double maior = (nota1 > nota2) ? nota1 : nota2;
+
+            if (media >= 7) {
+                resultado = "APROVADO POR MÉDIA";
+            } else if (media >= 5) {
+                resultado = "APROVADO";
+            } else {
+                resultado = "REPROVADO";
+            }
+
+            System.out.println("\n--- RELATÓRIO DO ALUNO ---");
+            System.out.println("Nome: " + nome);
+            System.out.println("Nota 1: " + nota1);
+            System.out.println("Nota 2: " + nota2);
+            System.out.printf("Média: %.2f%n", media);
+            System.out.println("Situação: " + resultado);
+            System.out.println("Maior nota: " + maior);
+
+            totalAlunos++;
+
+        } while (true); 
+
+        System.out.println("\n=== RESUMO FINAL ===");
+        System.out.println("Total de alunos processados: " + totalAlunos);
+        System.out.println("\nPrograma encerrado. Obrigado por usar o Sistema de Notas!");
+
+        scanner.close();
+    }
+}
