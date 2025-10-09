@@ -21,9 +21,7 @@ public class Idades {
         // Calcula e exibe a média
         if (contador > 0) {
             double media = (double) soma / contador;
-            System.out.println("A média dos números positivos é: " + media);
-        } else {
-            System.out.println("Nenhum número positivo foi encontrado.");
+            System.out.printf("%.2f%n", media);
         }
     }
 }

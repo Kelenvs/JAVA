@@ -1,0 +1,72 @@
+beecrowd | 1154
+Idades
+
+import java.util.Scanner;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        int [] idades = {34,56,44,23,-2};
+
+        int soma = 0;
+        int contador = 0;
+
+        for (int i = 0; i < idades.length; i++) {
+            if (idades[i] < 0) { 
+            }
+            soma += idades[i];
+            contador++;
+        }
+
+        if (contador > 0) {
+            double media = (double) soma / contador;
+            System.out.printf("%.2f%n", media);
+        }
+    }
+}
+____________________________________________________________
+beecrowd | 1157
+Divisores I
+
+import java.util.Scanner;
+import java.io.IOException;
+
+public class Divisores {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+
+        for (int i = 1; i <= N; i++) {
+            if (N % i == 0) { 
+                System.out.println(i);
+            }
+        }
+        scanner.close();
+    }
+}
+____________________________________________________________
+beecrowd | 2375
+Sedex
+
+import java.util.Scanner;
+import java.io.IOException;
+
+public class Sedex {
+    public static void main (String[]args){
+        Scanner scanner = new Scanner(System.in);
+
+        int N = scanner.nextInt();
+        int A = scanner.nextInt();
+        int L = scanner.nextInt();
+        int P = scanner.nextInt();
+
+        if(N <= A && N <= L && N <= P){
+            System.out.println("S");
+        } else{
+            System.out.println("N");
+        }
+        scanner.close();
+    }
+}
+
