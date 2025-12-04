@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.io.IOException;
 import java.io.PrintStream;
 
-public class DistanciaCarros {
+public class Distancia_1016 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int km = scanner.nextInt();

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.io.IOException;
 
-public class Idades {
+public class Idades_1154 {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         int [] idades = {34,56,44,23,-2};

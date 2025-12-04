@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.io.IOException;
 
-public class Divisores {
+public class Divisores1_1157 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
