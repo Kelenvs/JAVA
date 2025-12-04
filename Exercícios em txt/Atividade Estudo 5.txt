@@ -1,0 +1,71 @@
+1-1065-Pares entre Cinco Números
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class NumerosPares {
+     public static void main(String[] args) throws IOException {
+        int cont = 0;
+        int[] numeros = {2, 7, -4, 6, -5, 12};
+            for(int i = 0; i < numeros.length; i++){
+                int numero = numeros[i];
+            if(numero % 2 == 0){
+               cont++;
+            }
+        }
+        System.out.println(cont + " valores pares");
+    }
+}
+______________________________________________________________
+2-1118	-Várias Notas Com Validação
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class NotasValidadas {
+    public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            double nota1 = lerNotaValida(scanner);
+            double nota2 = lerNotaValida(scanner);
+            double media = (nota1 + nota2) / 2;
+            System.out.printf("media = %.2f\n", media);
+
+            int resultado;
+            do {
+                System.out.println("novo calculo (1-sim 2-nao)");
+                resultado = scanner.nextInt();
+            } while (resultado != 1 && resultado != 2);
+
+            if (resultado == 2) {
+                break;
+            }
+        }
+
+        scanner.close();
+    }
+
+    public static double lerNotaValida(Scanner scanner) {
+        double nota;
+        while (true) {
+            nota = scanner.nextDouble();
+            if (nota >= 0 && nota <= 10) {
+                return nota;
+            } else {
+                System.out.println("nota invalida");
+            }
+        }
+    }
+}
+
+______________________________________________________________
+3-1134	-Tipo de Combustível
+
+
+______________________________________________________________
+4-1708	-Volta
+
+
+______________________________________________________________
+5-2808-Mais Cavalos
