@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Tipos de Triângulos104 {
+public class TiposdeTriangulos_1045 {
     public static void main(String[] args) {
         // 1. Configura o Locale e o Scanner.
         Locale.setDefault(Locale.US);
