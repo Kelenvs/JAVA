@@ -1,28 +1,10 @@
-import java.util.Scanner;
-
-public class SequenciaLogica2_12{
+public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        // 1. Lê os valores X (números por linha) e Y (limite superior).
-        int X = sc.nextInt();
-        int Y = sc.nextInt();
-        
-        // 2. Loop de 1 até Y (inclusive).
-        for (int i = 1; i <= Y; i++) {
-            
-            // 3. Verifica se o número atual (i) é o último da linha.
-            // Para ser o último, o resto da divisão do seu índice em relação ao X deve ser zero.
-            // (i % X) == 0 -> indica que i é um múltiplo de X, ou seja, X, 2X, 3X, etc.
-            if (i % X == 0) {
-                // Se for o último número da linha, imprime o número e quebra a linha (println).
-                System.out.println(i);
-            } else {
-                // Se NÃO for o último número da linha, imprime o número seguido de um espaço (print).
-                System.out.print(i + " ");
-            }
+        // O loop começa em 2 (o primeiro número par > 1).
+        // Ele continua enquanto o número for menor ou igual a 100.
+        // O incremento é de 2 (i += 2), garantindo que apenas números pares sejam impressos.
+        for (int i = 2; i <= 100; i += 2) {
+            System.out.println(i);
         }
-        
-        sc.close();
     }
 }
